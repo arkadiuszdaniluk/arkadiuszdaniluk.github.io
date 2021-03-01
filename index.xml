@@ -7,10 +7,10 @@
             <atom:link href="http://blog.itprog.eu/index.xml" rel="self" type="application/rss+xml" />
         <item>
     <title>Multi GPU overclock setup under Fedora 33</title>
-    <link>http://blog.itprog.eu/posts/fedora33_multi_gpu_oc/</link>
+    <link>http://blog.itprog.eu/posts/fedora33-multi-gpu-oc/</link>
     <pubDate>Mon, 01 Mar 2021 21:20:41 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>http://blog.itprog.eu/posts/fedora33_multi_gpu_oc/</guid>
+    <guid>http://blog.itprog.eu/posts/fedora33-multi-gpu-oc/</guid>
     <description><![CDATA[It turns out GPU overclocking under Linux may not be easy peasy.
 Objective The goal is to be able to overclock GPU without any displays attached.
 After installation of nvidia card and proper drivers under linux system the overclock functionality is disabled by default.
