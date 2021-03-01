@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Multi GPU overclock setup under Fedora 33 | </title><meta name="Description" content=""><meta property="og:title" content="Multi GPU overclock setup under Fedora 33" />
+<meta property="og:description" content="It turns out GPU overclocking under Linux may not be easy peasy.
+Objective The goal is to be able to overclock GPU without any displays attached.
+After installation of nvidia card and proper drivers under linux system the overclock functionality is disabled by default.
+To overcome this limitation few steps are required, but when attached card has no displays attached it gets a little bit more complicated.
+My setup I have three NVIDIA GPUs installed on my mobo:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://blog.itprog.eu/posts/fedora33_multi_gpu_oc/" />
+<meta property="article:published_time" content="2021-03-01T21:20:41+01:00" />
+<meta property="article:modified_time" content="2021-03-01T21:20:41+01:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Multi GPU overclock setup under Fedora 33"/>
+<meta name="twitter:description" content="It turns out GPU overclocking under Linux may not be easy peasy.
+Objective The goal is to be able to overclock GPU without any displays attached.
+After installation of nvidia card and proper drivers under linux system the overclock functionality is disabled by default.
+To overcome this limitation few steps are required, but when attached card has no displays attached it gets a little bit more complicated.
+My setup I have three NVIDIA GPUs installed on my mobo:"/>
+<meta name="application-name" content="">
+<meta name="apple-mobile-web-app-title" content=""><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://blog.itprog.eu/posts/fedora33_multi_gpu_oc/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Multi GPU overclock setup under Fedora 33",
+        "inLanguage": "en-us",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/blog.itprog.eu\/posts\/fedora33_multi_gpu_oc\/"
+        },"genre": "posts","keywords": "fedora, nvidia, CUDA, GPU, overclock, 3060 Ti, 3070, eth, mining","wordCount":  540 ,
+        "url": "http:\/\/blog.itprog.eu\/posts\/fedora33_multi_gpu_oc\/","datePublished": "2021-03-01T21:20:41+01:00","dateModified": "2021-03-01T21:20:41+01:00","publisher": {
+            "@type": "Organization",
+            "name": "Author"},"author": {
+                "@type": "Person",
+                "name": "Author"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="" data-header-mobile=""><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="" class="header-logo"><span class="header-title-pre"><i class="fas fa-keyboard"></i></span>Techie blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/about/"> About </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="" class="header-logo"><span class="header-title-pre"><i class="fas fa-keyboard"></i></span>Techie blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/about/" title="">About</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header><main class="main"><div class="container content-article  theme-classic"><div class="toc" id="toc-auto">
+            <div class="toc-title">Contents</div>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><div class="header-post">
+        <div class="post-title">
+
+            <div class="post-all-meta">
+            <div class="breadcrumbs">
+    <a href="/">Home </a>/ <a href="/"> Multi GPU overclock setup under Fedora 33 </a>
+</div>
+            <h1 class="single-title animated flipInX">Multi GPU overclock setup under Fedora 33</h1><div class="post-meta">
+                <div class="post-meta-line">&nbsp;&nbsp;&nbsp;&nbsp;<i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time class="timeago" datetime="2021-03-01">2021-03-01</time>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;540 words
+                    &nbsp;&nbsp;&nbsp;&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;3 minutes</div>
+            </div>
+        </div>
+
+
+    </div>
+
+    </div>
+
+        <article class="single toc-start">
+
+        <div class="content-block content-block-first content-block-position">
+
+        <div class="post"><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#objective">Objective</a></li>
+        <li><a href="#my-setup">My setup</a></li>
+        <li><a href="#solution">Solution</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><p>It turns out GPU overclocking under Linux may not be easy peasy.</p>
+<h3 id="objective">Objective</h3>
+<p>The goal is to be able to overclock GPU without any displays attached.</p>
+<p>After installation of nvidia card and proper drivers under linux system the overclock functionality is disabled by
+default.</p>
+<p>To overcome this limitation few steps are required, but when attached card has no displays attached it gets a little bit more complicated.</p>
+<h3 id="my-setup">My setup</h3>
+<p>I have three NVIDIA GPUs installed on my mobo:</p>
+<ul>
+<li>GTX 1650S</li>
+<li>RTX 3070</li>
+<li>RTX 3060 Ti</li>
+</ul>
+<p>1650S is used just as display output (HDMI, DP ports used)<br>
+3070 and 3060 Ti for CUDA calculations</p>
+<p>To increase performance I wanted to overclock 3070 and 3060 Ti, but it forced me to learn few more things in Linux.</p>
+<h3 id="solution">Solution</h3>
+<p>Here is my configuration file (<code>/etc/X11/xorg.conf.d/10-nvidia.conf</code>)</p>
+<pre><code>Section &quot;ServerLayout&quot;
+    Identifier     &quot;Layout0&quot;
+    Screen      0  &quot;Screen0&quot; 0 0
+    Screen      1  &quot;Screen1&quot; 0 0
+    Screen      2  &quot;Screen2&quot; 0 0
+    InputDevice    &quot;Keyboard0&quot; &quot;CoreKeyboard&quot;
+    InputDevice    &quot;Mouse0&quot; &quot;CorePointer&quot;
+    Option         &quot;Xinerama&quot; &quot;0&quot;
+EndSection
+
+Section &quot;InputDevice&quot;
+    # generated from default
+    Identifier     &quot;Mouse0&quot;
+    Driver         &quot;mouse&quot;
+    Option         &quot;Protocol&quot; &quot;auto&quot;
+    Option         &quot;Device&quot; &quot;/dev/input/mice&quot;
+    Option         &quot;Emulate3Buttons&quot; &quot;no&quot;
+    Option         &quot;ZAxisMapping&quot; &quot;4 5&quot;
+EndSection
+
+Section &quot;InputDevice&quot;
+    # generated from default
+    Identifier     &quot;Keyboard0&quot;
+    Driver         &quot;kbd&quot;
+EndSection
+
+Section &quot;Monitor&quot;
+    # HorizSync source: edid, VertRefresh source: edid
+    Identifier     &quot;Monitor0&quot;
+    VendorName     &quot;Unknown&quot;
+    ModelName      &quot;Idek Iiyama PLX2380H&quot;
+    HorizSync       30.0 - 83.0
+    VertRefresh     55.0 - 76.0
+    Option         &quot;DPMS&quot;
+EndSection
+
+Section &quot;Device&quot;
+    Identifier     &quot;Device0&quot;
+    Driver         &quot;nvidia&quot;
+    VendorName     &quot;NVIDIA Corporation&quot;
+    BoardName      &quot;GeForce GTX 1650 SUPER&quot;
+    BusID          &quot;PCI:11:0:0&quot;
+EndSection
+
+Section &quot;Screen&quot;
+    Identifier     &quot;Screen0&quot;
+    Device         &quot;Device0&quot;
+    Monitor        &quot;Monitor0&quot;
+    DefaultDepth    24
+    Option         &quot;Stereo&quot; &quot;0&quot;
+    Option         &quot;nvidiaXineramaInfoOrder&quot; &quot;DFP-2&quot;
+    Option         &quot;metamodes&quot; &quot;HDMI-0: nvidia-auto-select +2560+0, DP-0: nvidia-auto-select +0+0&quot;
+    Option         &quot;SLI&quot; &quot;Off&quot;
+    Option         &quot;MultiGPU&quot; &quot;Off&quot;
+    Option         &quot;BaseMosaic&quot; &quot;off&quot;
+    Option         &quot;Coolbits&quot; &quot;28&quot;
+    SubSection     &quot;Display&quot;
+        Depth       24
+    EndSubSection
+EndSection
+
+#########################3060################################################
+Section &quot;Monitor&quot;
+    Identifier     &quot;Monitor1&quot;
+    VendorName     &quot;Unknown&quot;
+    ModelName      &quot;Unknown&quot;
+    Option         &quot;DPMS&quot;
+    Option         &quot;CustomEDID&quot; &quot;DFP-0:/etc/X11/edid.bin&quot;
+EndSection
+
+Section &quot;Device&quot;
+    Identifier     &quot;Device1&quot;
+    Driver         &quot;nvidia&quot;
+    VendorName     &quot;NVIDIA Corporation&quot;
+    BoardName      &quot;GeForce RTX 3060&quot;
+    BusID          &quot;PCI:10:0:0&quot;
+    Option         &quot;Coolbits&quot; &quot;28&quot;
+EndSection
+
+#screen for 3070
+Section &quot;Screen&quot;
+    Identifier     &quot;Screen1&quot;
+    Device         &quot;Device1&quot;
+    Monitor        &quot;Monitor1&quot;
+    Option         &quot;UseDisplayDevice&quot; &quot;DFP-0&quot;
+    Option         &quot;ConnectedMonitor&quot; &quot;DFP-0&quot;
+    DefaultDepth    24
+    Option         &quot;Coolbits&quot; &quot;28&quot;
+    SubSection     &quot;Display&quot;
+        Viewport 0 0
+        Depth       24
+    EndSubSection
+EndSection
+
+
+###########################3070##############################################
+Section &quot;Monitor&quot;
+    Identifier     &quot;Monitor2&quot;
+    VendorName     &quot;Unknown&quot;
+    ModelName      &quot;Unknown&quot;
+    Option         &quot;DPMS&quot;
+    Option         &quot;CustomEDID&quot; &quot;DFP-0:/etc/X11/edid.bin&quot;
+EndSection
+
+Section &quot;Device&quot;
+    Identifier     &quot;Device2&quot;
+    Driver         &quot;nvidia&quot;
+    VendorName     &quot;NVIDIA Corporation&quot;
+    BoardName      &quot;GeForce RTX 3070&quot;
+    BusID          &quot;PCI:4:0:0&quot;
+    Option         &quot;Coolbits&quot; &quot;28&quot;
+EndSection
+
+#screen for 3070
+Section &quot;Screen&quot;
+    Identifier     &quot;Screen2&quot;
+    Device         &quot;Device2&quot;
+    Monitor        &quot;Monitor2&quot;
+    Option         &quot;UseDisplayDevice&quot; &quot;DFP-0&quot;
+    Option         &quot;ConnectedMonitor&quot; &quot;DFP-0&quot;
+    DefaultDepth    24
+    Option         &quot;Coolbits&quot; &quot;28&quot;
+    SubSection     &quot;Display&quot;
+        Viewport 0 0
+        Depth       24
+    EndSubSection
+EndSection
+</code></pre><h4 id="description">Description</h4>
+<p>First thing you need to do is to configure <em>Dummy monitor</em> for the card.</p>
+<p>To do so we need <code>EDID</code> of some screen.</p>
+<p>The easiest way is to export it from already attached display.</p>
+<figure><div style="text-align: center"><a target="_blank" class="lightgallery" href="/nvidia-oc/display-edid.png" title="/nvidia-oc/display-edid.png" data-thumbnail="/nvidia-oc/display-edid.png" data-sub-html="<h2>Exporting EDIT</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/nvidia-oc/display-edid.png"
+            data-srcset="/nvidia-oc/display-edid.png, /nvidia-oc/display-edid.png 1.5x, /nvidia-oc/display-edid.png 1.6x"
+            data-sizes="auto"
+            alt="/nvidia-oc/display-edid.png" />
+    </a></div><figcaption class="image-caption">Exporting <code>EDIT</code></figcaption>
+    </figure>
+<p>It is reflected in the section:</p>
+<pre><code>#Dummy monitor
+Section &quot;Monitor&quot;
+    Identifier     &quot;Monitor1&quot;
+    VendorName     &quot;Unknown&quot;
+    ModelName      &quot;Unknown&quot;
+    Option         &quot;DPMS&quot;
+    Option         &quot;CustomEDID&quot; &quot;DFP-0:/etc/X11/edid.bin&quot;
+EndSection
+</code></pre><p>Then we need to create <code>Device</code> section for our card where in <code>BusId</code> we specify port where card is attached.</p>
+<p>The last section is <code>Screen</code> which connects <code>Device</code> and <code>Screen</code>.</p>
+<p>The crucial part is <code>Option         &quot;Coolbits&quot; &quot;28&quot;</code> which turns on overclocking possibilities.</p>
+<p>In the end we end up with:
+<figure><div style="text-align: center"><a target="_blank" class="lightgallery" href="/nvidia-oc/result.png" title="/nvidia-oc/result.png" data-thumbnail="/nvidia-oc/result.png" data-sub-html="<h2>Overclocking options turned on</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/nvidia-oc/result.png"
+            data-srcset="/nvidia-oc/result.png, /nvidia-oc/result.png 1.5x, /nvidia-oc/result.png 1.6x"
+            data-sizes="auto"
+            alt="/nvidia-oc/result.png" />
+    </a></div><figcaption class="image-caption">Overclocking options turned on</figcaption>
+    </figure></p>
+<p>Useful resources:</p>
+<ul>
+<li><a href="https://wiki.archlinux.org/index.php/NVIDIA/Tips_and_tricks#Enabling_overclocking" target="_blank" rel="noopener noreffer">NVIDIA/Tips and tricks</a></li>
+<li><a href="https://unix.stackexchange.com/questions/200553/multi-nvidia-gpu-overclocking-for-computations-cuda" target="_blank" rel="noopener noreffer">That question on StackExchange</a></li>
+</ul>
+</div>
+
+            <div class="post"><div class="post-info-share">
+    <span></span>
+</div><div class="post-footer" id="post-footer"></div>
+</div>
+        </div>
+    <div id="toc-final"></div>
+    </article><div class=" post-tags post-tags-toc "><a href="/tags/fedora/" class="tag">fedora</a><a href="/tags/nvidia/" class="tag">nvidia</a><a href="/tags/cuda/" class="tag">CUDA</a><a href="/tags/gpu/" class="tag">GPU</a><a href="/tags/overclock/" class="tag">overclock</a><a href="/tags/3060-ti/" class="tag">3060 Ti</a><a href="/tags/3070/" class="tag">3070</a><a href="/tags/eth/" class="tag">eth</a><a href="/tags/mining/" class="tag">mining</a></div></div></main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.80.0">Hugo</a> | Theme - <a href="https://ublogger.netlify.app/?utm_source=http://blog.itprog.eu/&utm_medium=footer&utm_campaign=config&utm_term=1.2.0" target="_blank" title="uBlogger 1.2.0"><i class="fas fa-pencil-alt fa-fw"></i> uBlogger</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span>2021</span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/clipboard/clipboard.min.js"></script><script>window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10}};</script><script src="/js/theme.min.js"></script><script src="/js/jquery-3.5.1.min.js"></script></body>
+</html>
