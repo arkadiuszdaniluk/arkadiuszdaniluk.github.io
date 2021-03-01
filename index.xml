@@ -3,7 +3,18 @@
         <title></title>
         <link>http://blog.itprog.eu/</link>
         <description></description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 01 Mar 2021 21:20:41 &#43;0100</lastBuildDate>
             <atom:link href="http://blog.itprog.eu/index.xml" rel="self" type="application/rss+xml" />
-        </channel>
+        <item>
+    <title>Multi GPU overclock setup under Fedora 33</title>
+    <link>http://blog.itprog.eu/posts/fedora33_multi_gpu_oc/</link>
+    <pubDate>Mon, 01 Mar 2021 21:20:41 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://blog.itprog.eu/posts/fedora33_multi_gpu_oc/</guid>
+    <description><![CDATA[It turns out GPU overclocking under Linux may not be easy peasy.
+Objective The goal is to be able to overclock GPU without any displays attached.
+After installation of nvidia card and proper drivers under linux system the overclock functionality is disabled by default.
+To overcome this limitation few steps are required, but when attached card has no displays attached it gets a little bit more complicated.
+My setup I have three NVIDIA GPUs installed on my mobo:]]></description>
+</item></channel>
 </rss>

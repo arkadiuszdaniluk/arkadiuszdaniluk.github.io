@@ -2,7 +2,18 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
+            <loc>http://blog.itprog.eu/</loc><lastmod>2021-03-01T21:20:41&#43;01:00</lastmod></url><url>
+            <loc>http://blog.itprog.eu/tags/3060-ti/</loc><lastmod>2021-03-01T21:20:41&#43;01:00</lastmod></url><url>
+            <loc>http://blog.itprog.eu/tags/3070/</loc><lastmod>2021-03-01T21:20:41&#43;01:00</lastmod></url><url>
+            <loc>http://blog.itprog.eu/tags/cuda/</loc><lastmod>2021-03-01T21:20:41&#43;01:00</lastmod></url><url>
+            <loc>http://blog.itprog.eu/tags/eth/</loc><lastmod>2021-03-01T21:20:41&#43;01:00</lastmod></url><url>
+            <loc>http://blog.itprog.eu/tags/fedora/</loc><lastmod>2021-03-01T21:20:41&#43;01:00</lastmod></url><url>
+            <loc>http://blog.itprog.eu/tags/gpu/</loc><lastmod>2021-03-01T21:20:41&#43;01:00</lastmod></url><url>
+            <loc>http://blog.itprog.eu/tags/mining/</loc><lastmod>2021-03-01T21:20:41&#43;01:00</lastmod></url><url>
+            <loc>http://blog.itprog.eu/posts/fedora33_multi_gpu_oc/</loc><lastmod>2021-03-01T21:20:41&#43;01:00</lastmod></url><url>
+            <loc>http://blog.itprog.eu/tags/nvidia/</loc><lastmod>2021-03-01T21:20:41&#43;01:00</lastmod></url><url>
+            <loc>http://blog.itprog.eu/tags/overclock/</loc><lastmod>2021-03-01T21:20:41&#43;01:00</lastmod></url><url>
+            <loc>http://blog.itprog.eu/posts/</loc><lastmod>2021-03-01T21:20:41&#43;01:00</lastmod></url><url>
+            <loc>http://blog.itprog.eu/tags/</loc><lastmod>2021-03-01T21:20:41&#43;01:00</lastmod></url><url>
             <loc>http://blog.itprog.eu/about/</loc><lastmod>2021-02-24T19:55:38&#43;01:00</lastmod></url><url>
-            <loc>http://blog.itprog.eu/</loc></url><url>
-            <loc>http://blog.itprog.eu/categories/</loc></url><url>
-            <loc>http://blog.itprog.eu/tags/</loc></url></urlset>
+            <loc>http://blog.itprog.eu/categories/</loc></url></urlset>
