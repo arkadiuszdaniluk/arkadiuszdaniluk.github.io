@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "style.min.css",
-	"sourceRoot": "/home/arek/DEV-priv/blog-2",
+	"sourceRoot": "/home/arek/DEV-priv/BLOG",
 	"sources": [
 		"themes/uBlogger/assets/css/style.scss",
 		"themes/uBlogger/assets/css/_variables.scss",
