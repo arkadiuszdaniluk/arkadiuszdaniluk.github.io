@@ -47,16 +47,16 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[
               {
-                category: 'Frontend',
-                skills: ['React', 'TypeScript', 'Tailwind CSS', 'Next.js', 'Vue.js'],
+                category: 'AI & Data Science',
+                skills: ['Python', 'TensorFlow', 'PyTorch', 'Data Analysis', 'Machine Learning'],
               },
               {
                 category: 'Backend',
-                skills: ['Node.js', 'Express', 'PostgreSQL', 'MongoDB', 'REST APIs'],
+                skills: ['Golang', 'Java', 'Python', 'Node.js', 'Rust']
               },
               {
-                category: 'Tools & DevOps',
-                skills: ['Git', 'Docker', 'AWS', 'GitHub Actions', 'Webpack'],
+                category: 'Frontend',
+                skills: ['React', 'TypeScript', 'Vue.js', 'Tailwind CSS'],
               },
               {
                 category: 'Soft Skills',

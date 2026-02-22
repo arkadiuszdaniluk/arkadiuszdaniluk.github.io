@@ -26,11 +26,8 @@ export default function Footer() {
               <a href="#" className="text-gray-400 hover:text-primary transition">
                 {t('footer.linkedin')}
               </a>
-              <a href="#" className="text-gray-400 hover:text-primary transition">
+              <a href="https://github.com/arkadiuszdaniluk" className="text-gray-400 hover:text-primary transition">
                 {t('footer.github')}
-              </a>
-              <a href="#" className="text-gray-400 hover:text-primary transition">
-                {t('footer.twitter')}
               </a>
             </div>
           </div>

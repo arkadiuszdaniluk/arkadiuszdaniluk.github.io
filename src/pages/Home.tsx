@@ -29,9 +29,12 @@ export default function Home() {
           <h2 className="text-4xl font-bold mb-12 text-center">{t('about.skills')}</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { title: 'React & TypeScript', desc: 'Modern frontend development' },
-              { title: 'Node.js & Express', desc: 'Powerful backend solutions' },
-              { title: 'Full Stack', desc: 'End-to-end application development' },
+              { title: t('about.skills_ai'), desc: t('about.skills_ai_desc') },
+              { title: t('about.skills_cloud'), desc: t('about.skills_cloud_desc') },
+              { title: t('about.skills_fullstack'), desc: t('about.skills_fullstack_desc') },
+              { title: t('about.skills_microservices'), desc: t('about.skills_microservices_desc') },
+              { title: t('about.skills_data'), desc: t('about.skills_data_desc') },
+              { title: t('about.skills_backend'), desc: t('about.skills_backend_desc') },
             ].map((skill, i) => (
               <div key={i} className="p-6 bg-light rounded-lg hover:shadow-lg transition">
                 <h3 className="text-xl font-semibold mb-2 text-primary">{skill.title}</h3>
@@ -47,7 +50,7 @@ export default function Home() {
         <div className="container-custom text-center">
           <h2 className="text-4xl font-bold mb-6">{t('home.question')}</h2>
           <p className="text-lg mb-8 opacity-90 max-w-2xl mx-auto">
-           {t('home.inspire')}
+            {t('home.inspire')}
           </p>
           <Link to="/contact" className="btn-secondary">
             {t('navigation.contact')}

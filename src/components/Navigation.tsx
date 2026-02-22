@@ -50,9 +50,9 @@ export default function Navigation() {
             <Link to="/about" className="text-gray-700 hover:text-primary transition">
               {t('navigation.about')}
             </Link>
-            <Link to="/portfolio" className="text-gray-700 hover:text-primary transition">
+            {/* <Link to="/portfolio" className="text-gray-700 hover:text-primary transition">
               {t('navigation.portfolio')}
-            </Link>
+            </Link> */}
             <Link to="/services" className="text-gray-700 hover:text-primary transition">
               {t('navigation.services')}
             </Link>

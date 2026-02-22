@@ -7,7 +7,7 @@
     "contact": "Contact"
   },
   "home": {
-    "title": "Welcome to My Portfolio",
+    "title": "Welcome to my portfolio",
     "subtitle": "Software Engineer & Creative Developer",
     "description": "Building modern, responsive applications with cutting-edge technologies",
     "cta": "View My Work",
@@ -17,10 +17,22 @@
   },
   "about": {
     "title": "About Me",
-    "description": "I am a passionate software engineer with over 10 years of experience specializing in backend and frontend technologies. I utilize cutting-edge tools and frameworks to create high-quality, scalable solutions that propel business growth. My commitment to excellence guarantees accountability, on-time delivery, and creative solutions to intricate problems.",
+    "description": "I am a passionate software engineer with over 13 years of experience specializing in backend and frontend technologies. I utilize cutting-edge tools and frameworks to create high-quality, scalable solutions that propel business growth. My commitment to excellence guarantees accountability, on-time delivery, and creative solutions to intricate problems.",
     "paragraph1": "My journey in software development began over a decade ago, fueled by a passion for designing intuitive and engaging user experiences. Throughout my career, I've partnered with startups and established companies alike, developing robust applications that meet diverse needs.",
     "paragraph2": "My comprehensive expertise in full-stack technologies enables me to oversee projects from ideation to deployment. I stay abreast of the latest advancements and best practices to ensure innovative and efficient outcomes.",
     "skills": "Skills",
+    "skills_ai": "AI Technologies",
+    "skills_cloud": "Cloud Computing",
+    "skills_fullstack": "Full Stack",
+    "skills_microservices": "Microservices",
+    "skills_data": "Data Engineering",
+    "skills_backend": "Backend Development",
+    "skills_ai_desc": "Experience with language models, natural language processing, and machine learning",
+    "skills_cloud_desc": "Proficiency in AWS, Azure, and Google Cloud Platform",
+    "skills_fullstack_desc": "Proficient in React, Node.js",
+    "skills_microservices_desc": "Designing and implementing microservices architecture",
+    "skills_data_desc": "Database management, ETL, and analytics",
+    "skills_backend_desc": "Building robust APIs and backend solutions",
     "experience": "Experience"
   },
   "portfolio": {
@@ -35,18 +47,52 @@
   },
   "services": {
     "title": "Services",
+    "ai_dev": "AI & Data Science",
+    "ai_dev_desc": "Building intelligent applications with machine learning and data analysis",
+    "ai_dev_features": [
+      "AI Integration",
+      "Machine Learning",
+      "Data Analysis",
+      "AI Model Development",
+      "Natural Language Processing"
+    ],
     "backend_dev": "Backend Development",
     "backend_dev_desc": "Developing robust and scalable backend systems and APIs",
-    "backend_dev_features": ["API Design", "Database Management", "Security", "Scalability"],
+    "backend_dev_features": [
+      "API Design",
+      "Database Management",
+      "Security",
+      "Scalability"
+    ],
     "mobile_dev": "Mobile Development",
     "mobile_dev_desc": "Building native and cross-platform mobile apps",
-    "mobile_dev_features": ["iOS & Android", "Cross-platform", "User Friendly", "App Store Ready"],
+    "mobile_dev_features": [
+      "iOS & Android",
+      "Cross-platform",
+      "User Friendly",
+      "App Store Ready"
+    ],
     "consulting": "Technical Consulting",
     "consulting_desc": "Providing expert guidance on technology architecture",
-    "consulting_features": ["Architecture", "Best Practices", "Code Review", "Tech Stack Selection"],
+    "consulting_features": [
+      "Architecture",
+      "Best Practices",
+      "Code Review",
+      "Tech Stack Selection"
+    ],
     "process_title": "My Process",
-    "process_titles": ["Discovery", "Planning", "Development", "Delivery"],
-    "process_descs": ["Understanding your needs and goals", "Creating detailed project roadmap", "Building your solution", "Launching and supporting"],
+    "process_titles": [
+      "Discovery",
+      "Planning",
+      "Development",
+      "Delivery"
+    ],
+    "process_descs": [
+      "Understanding your needs and goals",
+      "Creating detailed project roadmap",
+      "Building your solution",
+      "Launching and supporting"
+    ],
     "cta_title": "Let's discuss your project",
     "cta_desc": "Get in touch with me to learn how I can help bring your ideas to life.",
     "cta_button": "Send me an email"
@@ -72,6 +118,6 @@
     "linkedin": "LinkedIn",
     "github": "GitHub",
     "twitter": "Twitter",
-    "copyright": "© 2024 My Portfolio. All rights reserved."
+    "copyright": "© 2026 ITPROG.EU. All rights reserved."
   }
 }

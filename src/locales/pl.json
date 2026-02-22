@@ -17,10 +17,22 @@
   },
   "about": {
     "title": "O mnie",
-    "description": "Jestem pasjonowanym inżynierem oprogramowania z ponad 10-letnim doświadczeniem specjalizującym się w technologiach backend i frontend. Wykorzystuję najnowocześniejsze narzędzia i frameworki do tworzenia wysokiej jakości, skalowalnych rozwiązań, które napędzają wzrost biznesowy. Moje zaangażowanie w doskonałość gwarantuje odpowiedzialność, terminowe dostarczanie i kreatywne rozwiązania złożonych problemów.",
+    "description": "Jestem inżynierem oprogramowania z ponad 13-letnim doświadczeniem specjalizującym się w technologiach backend i frontend. Wykorzystuję najnowocześniejsze narzędzia i frameworki do tworzenia wysokiej jakości, skalowalnych rozwiązań, które napędzają wzrost biznesowy. Moje zaangażowanie w doskonałość gwarantuje odpowiedzialność, terminowe dostarczanie i kreatywne rozwiązania złożonych problemów.",
     "paragraph1": "Moja podróż w rozwoju oprogramowania rozpoczęła się ponad dekadę temu, napędzana pasją do projektowania intuicyjnych i angażujących doświadczeń użytkownika. W trakcie mojej kariery współpracowałem zarówno ze startupami, jak i ustabilizowanymi firmami, rozwijając solidne aplikacje spełniające różnorodne potrzeby.",
     "paragraph2": "Moja kompleksowa wiedza w technologiach full-stack pozwala mi nadzorować projekty od pomysłu do wdrożenia. Pozostaję na bieżąco z najnowszymi osiągnięciami i najlepszymi praktykami, aby zapewnić innowacyjne i efektywne rezultaty.",
     "skills": "Umiejętności",
+    "skills_ai": "Technologie AI",
+    "skills_cloud": "Chmura obliczeniowa",
+    "skills_fullstack": "Full Stack",
+    "skills_microservices": "Mikroserwisy",
+    "skills_data": "Inżynieria danych",
+    "skills_backend": "Rozwój backendu",
+    "skills_ai_desc": "Doświadczenie w modelach językowych, przetwarzaniu języka naturalnego i uczeniu maszynowym",
+    "skills_cloud_desc": "Znajomość AWS, Azure i Google Cloud Platform",
+    "skills_fullstack_desc": "Biegłość w React, Node.js",
+    "skills_microservices_desc": "Projektowanie i wdrażanie architektury mikroserwisów",
+    "skills_data_desc": "Zarządzanie bazami danych, ETL i analityka",
+    "skills_backend_desc": "Tworzenie solidnych API i rozwiązań backendowych",
     "experience": "Doświadczenie"
   },
   "portfolio": {
@@ -37,16 +49,41 @@
     "title": "Usługi",
     "backend_dev": "Rozwój backendu",
     "backend_dev_desc": "Tworzenie solidnych i skalowalnych systemów backendowych i API",
-    "backend_dev_features": ["Projektowanie API", "Zarządzanie bazami danych", "Bezpieczeństwo", "Skalowalność"],
+    "backend_dev_features": [
+      "Projektowanie API",
+      "Zarządzanie bazami danych",
+      "Bezpieczeństwo",
+      "Skalowalność"
+    ],
     "mobile_dev": "Tworzenie aplikacji mobilnych",
     "mobile_dev_desc": "Budowanie natywnych i międzyplatformowych aplikacji mobilnych",
-    "mobile_dev_features": ["iOS i Android", "Międzyplatformowe", "Przyjazne dla użytkownika", "Gotowe do App Store"],
+    "mobile_dev_features": [
+      "iOS i Android",
+      "Międzyplatformowe",
+      "Przyjazne dla użytkownika",
+      "Gotowe do App Store"
+    ],
     "consulting": "Konsultacje techniczne",
     "consulting_desc": "Świadczenie fachowej pomocy w architekturze technologicznej",
-    "consulting_features": ["Architektura", "Najlepsze praktyki", "Przegląd kodu", "Wybór stosu technologicznego"],
+    "consulting_features": [
+      "Architektura",
+      "Najlepsze praktyki",
+      "Przegląd kodu",
+      "Wybór stosu technologicznego"
+    ],
     "process_title": "Mój proces",
-    "process_titles": ["Odkrywanie", "Planowanie", "Rozwój", "Dostawa"],
-    "process_descs": ["Zrozumienie Twoich potrzeb i celów", "Tworzenie szczegółowego planu projektu", "Budowanie Twojego rozwiązania", "Uruchamianie i wsparcie"],
+    "process_titles": [
+      "Odkrywanie",
+      "Planowanie",
+      "Rozwój",
+      "Dostawa"
+    ],
+    "process_descs": [
+      "Zrozumienie Twoich potrzeb i celów",
+      "Tworzenie szczegółowego planu projektu",
+      "Budowanie Twojego rozwiązania",
+      "Uruchamianie i wsparcie"
+    ],
     "cta_title": "Porozmawiajmy o Twoim projekcie",
     "cta_desc": "Skontaktuj się ze mną, aby dowiedzieć się, jak mogę pomóc w realizacji Twoich pomysłów.",
     "cta_button": "Wyślij mi e-mail"
@@ -72,6 +109,6 @@
     "linkedin": "LinkedIn",
     "github": "GitHub",
     "twitter": "Twitter",
-    "copyright": "© 2024 Moje Portfolio. Wszelkie prawa zastrzeżone."
+    "copyright": "© 2026 ITPROG.EU Wszelkie prawa zastrzeżone."
   }
 }
