@@ -1,0 +1,77 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "portfolio": "Portfolio",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Welcome to My Portfolio",
+    "subtitle": "Software Engineer & Creative Developer",
+    "description": "Building modern, responsive applications with cutting-edge technologies",
+    "cta": "View My Work",
+    "cta_contact": "Get in Touch",
+    "question": "Ready to work together?",
+    "inspire": "Let's create something amazing together. Contact me today to discuss your project."
+  },
+  "about": {
+    "title": "About Me",
+    "description": "I am a passionate software engineer with over 10 years of experience specializing in backend and frontend technologies. I utilize cutting-edge tools and frameworks to create high-quality, scalable solutions that propel business growth. My commitment to excellence guarantees accountability, on-time delivery, and creative solutions to intricate problems.",
+    "paragraph1": "My journey in software development began over a decade ago, fueled by a passion for designing intuitive and engaging user experiences. Throughout my career, I've partnered with startups and established companies alike, developing robust applications that meet diverse needs.",
+    "paragraph2": "My comprehensive expertise in full-stack technologies enables me to oversee projects from ideation to deployment. I stay abreast of the latest advancements and best practices to ensure innovative and efficient outcomes.",
+    "skills": "Skills",
+    "experience": "Experience"
+  },
+  "portfolio": {
+    "title": "My Portfolio",
+    "subtitle": "Showcase of recent projects",
+    "project1": "E-Commerce Platform",
+    "project1_desc": "Full-stack e-commerce solution with React, Node.js, and MongoDB",
+    "project2": "SaaS Dashboard",
+    "project2_desc": "Analytics dashboard with real-time data visualization",
+    "project3": "Mobile App",
+    "project3_desc": "Cross-platform mobile application using React Native"
+  },
+  "services": {
+    "title": "Services",
+    "backend_dev": "Backend Development",
+    "backend_dev_desc": "Developing robust and scalable backend systems and APIs",
+    "backend_dev_features": ["API Design", "Database Management", "Security", "Scalability"],
+    "mobile_dev": "Mobile Development",
+    "mobile_dev_desc": "Building native and cross-platform mobile apps",
+    "mobile_dev_features": ["iOS & Android", "Cross-platform", "User Friendly", "App Store Ready"],
+    "consulting": "Technical Consulting",
+    "consulting_desc": "Providing expert guidance on technology architecture",
+    "consulting_features": ["Architecture", "Best Practices", "Code Review", "Tech Stack Selection"],
+    "process_title": "My Process",
+    "process_titles": ["Discovery", "Planning", "Development", "Delivery"],
+    "process_descs": ["Understanding your needs and goals", "Creating detailed project roadmap", "Building your solution", "Launching and supporting"],
+    "cta_title": "Let's discuss your project",
+    "cta_desc": "Get in touch with me to learn how I can help bring your ideas to life.",
+    "cta_button": "Send me an email"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "description": "Have a project in mind? Let's work together",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message",
+    "phone": "Phone",
+    "location": "Location"
+  },
+  "footer": {
+    "brand": "Portfolio",
+    "description": "Building beautiful digital solutions for modern businesses.",
+    "email": "Email",
+    "email_value": "adaniluk@itprog.eu",
+    "location": "Location",
+    "location_value": "Kraków, Zakopane, Poland",
+    "followme": "Follow me",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "twitter": "Twitter",
+    "copyright": "© 2024 My Portfolio. All rights reserved."
+  }
+}

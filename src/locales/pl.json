@@ -1,0 +1,77 @@
+{
+  "navigation": {
+    "home": "Strona główna",
+    "about": "O mnie",
+    "portfolio": "Portfolio",
+    "services": "Usługi",
+    "contact": "Kontakt"
+  },
+  "home": {
+    "title": "Witaj na mojej stronie",
+    "subtitle": "Inżynier oprogramowania i kreatywny deweloper",
+    "description": "Tworzę nowoczesne, responsywne aplikacje z najnowszymi technologiami",
+    "cta": "Wyświetl moje prace",
+    "cta_contact": "Nawiąż kontakt",
+    "question": "Gotów na współprace?",
+    "inspire": "Stwórzmy razem coś cudownego. Skontaktuj się ze mną i przedyskutujmy Twój projekt."
+  },
+  "about": {
+    "title": "O mnie",
+    "description": "Jestem pasjonowanym inżynierem oprogramowania z ponad 10-letnim doświadczeniem specjalizującym się w technologiach backend i frontend. Wykorzystuję najnowocześniejsze narzędzia i frameworki do tworzenia wysokiej jakości, skalowalnych rozwiązań, które napędzają wzrost biznesowy. Moje zaangażowanie w doskonałość gwarantuje odpowiedzialność, terminowe dostarczanie i kreatywne rozwiązania złożonych problemów.",
+    "paragraph1": "Moja podróż w rozwoju oprogramowania rozpoczęła się ponad dekadę temu, napędzana pasją do projektowania intuicyjnych i angażujących doświadczeń użytkownika. W trakcie mojej kariery współpracowałem zarówno ze startupami, jak i ustabilizowanymi firmami, rozwijając solidne aplikacje spełniające różnorodne potrzeby.",
+    "paragraph2": "Moja kompleksowa wiedza w technologiach full-stack pozwala mi nadzorować projekty od pomysłu do wdrożenia. Pozostaję na bieżąco z najnowszymi osiągnięciami i najlepszymi praktykami, aby zapewnić innowacyjne i efektywne rezultaty.",
+    "skills": "Umiejętności",
+    "experience": "Doświadczenie"
+  },
+  "portfolio": {
+    "title": "Moje Portfolio",
+    "subtitle": "Prezentacja ostatnich projektów",
+    "project1": "Platforma e-commerce",
+    "project1_desc": "Kompleksowe rozwiązanie e-commerce z React, Node.js i MongoDB",
+    "project2": "Pulpit SaaS",
+    "project2_desc": "Pulpit analityki z wizualizacją danych w czasie rzeczywistym",
+    "project3": "Aplikacja mobilna",
+    "project3_desc": "Międzyplatformowa aplikacja mobilna używająca React Native"
+  },
+  "services": {
+    "title": "Usługi",
+    "backend_dev": "Rozwój backendu",
+    "backend_dev_desc": "Tworzenie solidnych i skalowalnych systemów backendowych i API",
+    "backend_dev_features": ["Projektowanie API", "Zarządzanie bazami danych", "Bezpieczeństwo", "Skalowalność"],
+    "mobile_dev": "Tworzenie aplikacji mobilnych",
+    "mobile_dev_desc": "Budowanie natywnych i międzyplatformowych aplikacji mobilnych",
+    "mobile_dev_features": ["iOS i Android", "Międzyplatformowe", "Przyjazne dla użytkownika", "Gotowe do App Store"],
+    "consulting": "Konsultacje techniczne",
+    "consulting_desc": "Świadczenie fachowej pomocy w architekturze technologicznej",
+    "consulting_features": ["Architektura", "Najlepsze praktyki", "Przegląd kodu", "Wybór stosu technologicznego"],
+    "process_title": "Mój proces",
+    "process_titles": ["Odkrywanie", "Planowanie", "Rozwój", "Dostawa"],
+    "process_descs": ["Zrozumienie Twoich potrzeb i celów", "Tworzenie szczegółowego planu projektu", "Budowanie Twojego rozwiązania", "Uruchamianie i wsparcie"],
+    "cta_title": "Porozmawiajmy o Twoim projekcie",
+    "cta_desc": "Skontaktuj się ze mną, aby dowiedzieć się, jak mogę pomóc w realizacji Twoich pomysłów.",
+    "cta_button": "Wyślij mi e-mail"
+  },
+  "contact": {
+    "title": "Skontaktuj się",
+    "description": "Masz projekt na myśli? Pracujmy razem",
+    "name": "Imię i nazwisko",
+    "email": "E-mail",
+    "message": "Wiadomość",
+    "send": "Wyślij wiadomość",
+    "phone": "Telefon",
+    "location": "Lokalizacja"
+  },
+  "footer": {
+    "brand": "Portfolio",
+    "description": "Tworzenie pięknych rozwiązań cyfrowych dla nowoczesnych firm.",
+    "email": "Email",
+    "email_value": "adaniluk@itprog.eu",
+    "location": "Lokalizacja",
+    "location_value": "Kraków, Zakopane, Polska",
+    "followme": "Obserwuj mnie",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "twitter": "Twitter",
+    "copyright": "© 2024 Moje Portfolio. Wszelkie prawa zastrzeżone."
+  }
+}
