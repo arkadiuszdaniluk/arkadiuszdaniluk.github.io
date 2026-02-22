@@ -13,9 +13,9 @@ export default function Home() {
           <p className="text-xl md:text-2xl mb-4 opacity-90">{t('home.subtitle')}</p>
           <p className="text-lg mb-10 max-w-2xl mx-auto opacity-80">{t('home.description')}</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/portfolio" className="btn-primary">
+            {/* <Link to="/portfolio" className="btn-primary">
               {t('home.cta')}
-            </Link>
+            </Link> */}
             <Link to="/contact" className="btn-secondary">
               {t('home.cta_contact')}
             </Link>
